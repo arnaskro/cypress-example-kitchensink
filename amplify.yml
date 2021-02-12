@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - npm install -g cypress@6.2.1
         - npm install
     build:
       commands:
@@ -32,7 +33,7 @@ test:
         - "npm start & npx wait-on http://127.0.0.1:8080"
     test:
       commands:
-        - 'npm cypress install'
+        - 'cypress install'
         - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
     postTest:
       commands:
