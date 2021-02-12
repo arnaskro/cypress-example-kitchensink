@@ -60,8 +60,7 @@
   "homepage": "https://github.com/cypress-io/cypress-example-kitchensink#readme",
   "dependencies": {
     "npm-run-all": "^4.1.2",
-    "serve": "11.3.0",
-    "cypress-image-snapshot": "4.0.0"
+    "serve": "11.3.0"
   },
   "devDependencies": {
     "@bahmutov/print-env": "1.2.0",
@@ -80,7 +79,9 @@
     "start-server-and-test": "1.10.6",
     "stop-build": "1.1.0",
     "typescript": "3.7.4",
-    "yaml-lint": "1.2.4"
+    "yaml-lint": "1.2.4",
+    "cypress-image-snapshot": "4.0.0",
+    "@types/cypress-image-snapshot": "^3.1.5"
   },
   "engines": {
     "node": ">=12"
