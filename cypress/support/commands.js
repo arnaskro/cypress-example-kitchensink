@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
+addMatchImageSnapshotCommand({
+  failureThreshold: 0.03, // threshold for entire image
+  failureThresholdType: 'percent', // percent of image or number of pixels
+  // customDiffConfig: { threshold: 0.0001 }, // threshold for each pixel
+  capture: 'viewport' // capture viewport in screenshot
+  //clip: { x: 0, y: 0, width: 1400, height: 660 }
+})
