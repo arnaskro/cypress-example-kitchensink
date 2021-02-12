@@ -16,6 +16,7 @@ context('Misc', () => {
 
       // queries the entire table again
       cy.contains('Charles').click()
+      // test
     })
   })
 
